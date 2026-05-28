@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <title>LawaOS — Twój system operacyjny</title>
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
 </head>
 <body>
 
 <header class="topbar">
-  <div class="logo">LawaOS</div>
   <nav>
+    <a href="#hero">Start</a>
     <a href="#about">O systemie</a>
     <a href="#features">Funkcje</a>
     <a href="#installer">Instalator</a>
@@ -17,51 +18,51 @@
   </nav>
 </header>
 
-<section class="hero">
+<section id="hero" class="hero reveal">
   <h1>LawaOS</h1>
-  <p>Nowoczesny system operacyjny startujący do GNOME, z możliwością wyboru środowiska podczas instalacji.</p>
+  <p>Nowoczesny system operacyjny startujący do GNOME, z wyborem środowiska podczas instalacji.</p>
   <div class="hero-buttons">
     <a class="btn primary" href="#download">Pobierz</a>
-    <a class="btn secondary" href="#installer">Jak działa instalator</a>
+    <a class="btn secondary" href="#installer">Instalator</a>
   </div>
 </section>
 
-<section id="about" class="section">
+<section id="about" class="section reveal">
   <h2>Czym jest LawaOS?</h2>
   <p>
     LawaOS to autorski system operacyjny tworzony przez Krzysztofa.  
-    System startuje do środowiska GNOME, aby zapewnić wygodny i nowoczesny interfejs od pierwszego uruchomienia.
+    System startuje do GNOME, aby zapewnić gotowe środowisko od pierwszego uruchomienia ISO.
   </p>
   <p>
-    Podczas instalacji użytkownik może wybrać inne środowisko graficzne, takie jak KDE Plasma, XFCE, Cinnamon lub pozostać przy GNOME.
+    Podczas instalacji użytkownik może wybrać inne środowisko graficzne: KDE Plasma, XFCE, Cinnamon lub pozostać przy GNOME.
   </p>
 </section>
 
-<section id="features" class="section cards">
+<section id="features" class="section cards reveal">
   <h2>Najważniejsze funkcje</h2>
   <div class="card-grid">
-    <div class="card">
+    <div class="card reveal">
       <h3>Start do GNOME</h3>
-      <p>System uruchamia się bezpośrednio do GNOME, zapewniając gotowe środowisko od razu po starcie ISO.</p>
+      <p>System uruchamia się bezpośrednio do GNOME, zapewniając gotowy interfejs.</p>
     </div>
-    <div class="card">
+    <div class="card reveal">
       <h3>Wybór środowiska</h3>
-      <p>Instalator pozwala wybrać dowolne środowisko graficzne przed instalacją systemu.</p>
+      <p>Instalator pozwala wybrać dowolne środowisko graficzne.</p>
     </div>
-    <div class="card">
+    <div class="card reveal">
       <h3>Modularna budowa</h3>
-      <p>System jest projektowany modułowo, z własnym formatem paczek <b>.lawa</b>.</p>
+      <p>System projektowany modułowo, z własnym formatem paczek <b>.lawa</b>.</p>
     </div>
-    <div class="card">
+    <div class="card reveal">
       <h3>Nowoczesny wygląd</h3>
-      <p>Domyślny motyw LawaOS jest ciemny, minimalistyczny i inspirowany kolorem lawy.</p>
+      <p>Ciemny, lawowy motyw inspirowany rozgrzaną skałą.</p>
     </div>
   </div>
 </section>
 
-<section id="installer" class="section highlight">
+<section id="installer" class="section highlight reveal">
   <h2>Instalator LawaOS</h2>
-  <p>Instalator działa w środowisku GNOME i prowadzi użytkownika przez proces instalacji krok po kroku.</p>
+  <p>Instalator działa w środowisku GNOME i prowadzi użytkownika krok po kroku.</p>
   <ul>
     <li>Wybór środowiska graficznego</li>
     <li>Wybór dysku i partycjonowanie</li>
@@ -70,7 +71,7 @@
   </ul>
 </section>
 
-<section id="download" class="section">
+<section id="download" class="section reveal">
   <h2>Pobierz LawaOS</h2>
   <p>Obraz ISO będzie dostępny wkrótce.</p>
   <div class="download-buttons">
