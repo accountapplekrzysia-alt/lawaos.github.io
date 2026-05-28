@@ -22,13 +22,13 @@ body {
   color: var(--text);
   font-family: system-ui, sans-serif;
   line-height: 1.6;
+  background-size: 200%;
 }
 
 /* --- TOPBAR --- */
 .topbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   padding: 16px 40px;
   background: var(--bg3);
   border-bottom: 1px solid var(--border);
@@ -38,7 +38,7 @@ body {
 }
 
 nav a {
-  margin-left: 20px;
+  margin: 0 15px;
   color: var(--accent);
   opacity: 0.9;
   font-size: 15px;
@@ -47,15 +47,16 @@ nav a {
   transition: opacity 0.2s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   opacity: 1;
+  color: var(--accent-light);
 }
 
 /* --- HERO --- */
 .hero {
   padding: 100px 40px;
   background: radial-gradient(circle at top, #ff6a0022, var(--bg) 70%);
-  text-align: left;
 }
 
 .hero h1 {
@@ -173,4 +174,17 @@ footer {
   border-top: 1px solid var(--border);
   opacity: 0.7;
   font-size: 14px;
+}
+
+/* --- ANIMACJA SCROLL (REVEAL) --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: drop-shadow(0 0 12px #ff6a00);
 }
